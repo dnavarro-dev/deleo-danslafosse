@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<!-- Deleo — landing « 387 / Dans la Fosse » — V5 (15/09/2026)
+<!--
+     V6 (16/09/2026) : bloc « Prochaines dates » ajouté sous le formulaire —
+     Nice ven 2/10 (Le Brassitorium), Albi ven 9/10 (Bumb Festival). Demande Denis.
+
+     Deleo — landing « 387 / Dans la Fosse » — V5 (15/09/2026)
      V5 : le titre est le chiffre. 387 = signe de ralliement (H1) ; « dans la fosse » = le geste (bouton, URL, liste).
      Le « 1000 » disparaît du copy public. Pixel Meta posé (PageView + Lead à l'inscription) : jonction A du circuit
      Meta → CM → mail. Lien Facebook ajouté. Messages d'erreur passés au vous (restes de tutoiement en V4).
@@ -41,6 +45,7 @@
   button:hover{opacity:.85}
   button[disabled]{opacity:.5;cursor:wait}
   .note{font-size:12px;line-height:19px;color:var(--dim);margin:18px 0 0}
+  .dates{font-size:16px;line-height:26px;margin:0}
   .msg{display:none;margin-top:18px;font-size:18px;line-height:28px;padding:16px 18px;border:1px solid var(--fg)}
   .msg.err{border-color:var(--red);color:var(--red)}
   .msg.show{display:block}
@@ -89,6 +94,12 @@ fbq('init','226905207157692');fbq('track','PageView');
   </form>
   <div class="msg" id="msg" role="status" aria-live="polite"></div>
   <p class="note">On écrit quand on a quelque chose à dire. Jamais pour remplir. Vous partez quand vous voulez.</p>
+
+  <div class="rule"></div>
+
+  <p class="dates"><b>Prochaines dates</b><br>
+    Nice — vendredi 2 octobre, Le Brassitorium<br>
+    Albi — vendredi 9 octobre, Bumb Festival</p>
 </div>
 <footer><a href="https://deleoofficial.com">deleoofficial.com</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/deleo_officiel/">@deleo_officiel</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/Deleoofficial">Facebook</a></footer>
 
