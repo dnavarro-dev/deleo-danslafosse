@@ -25,19 +25,22 @@
 <meta name="robots" content="index,follow">
 <style>
   /* Charte mail Deleo : fond #F3F3F3, colonne blanche 600px, Helvetica centrée,
-     texte noir, rouge #B21212 en surlignage et en bouton, filets courts. */
-  :root{--page:#F3F3F3;--col:#fff;--fg:#000;--dim:#555;--red:#B21212;--rule:#000}
+     texte #1A1A1A, rouge #E8170E en filet et en bouton. Charte Deleo (_Reference_DA_Deleo.md) :
+     Archivo, #E8170E, noir #1A1A1A, gris #F2F2F2 — le rouge est un filet, jamais un aplat (§3.6).
+     Déployée le 20/09/2026 sur les trois supports ; elle prévaut sur la charte Manifeste de décembre. */
+  :root{--page:#F2F2F2;--col:#F2F2F2;--fg:#1A1A1A;--dim:#888;--red:#E8170E;--rule:#1A1A1A}
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--page);color:var(--fg);
-    font-family:helvetica,Helvetica Neue,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    font-family:Archivo,helvetica,Helvetica Neue,Arial,sans-serif;-webkit-font-smoothing:antialiased}
   .wrap{max-width:600px;margin:0 auto;background:var(--col);padding:clamp(40px,7vw,64px) clamp(20px,6vw,44px) 48px;text-align:center}
   .logo{display:block;width:163px;max-width:60%;height:auto;margin:0 auto 40px}
-  h1.num{font-size:clamp(112px,28vw,176px);font-weight:700;line-height:1;letter-spacing:-.05em;margin:0;color:var(--red)}
+  h1.num{font-size:clamp(112px,28vw,176px);font-weight:700;line-height:1;letter-spacing:-.05em;margin:0;color:var(--fg)}
+  h1.num span{display:inline-block;border-bottom:.055em solid var(--red);padding-bottom:.04em}
   .sous{font-size:14px;line-height:22px;color:var(--dim);margin:20px 0 0}
   h2{font-size:clamp(24px,5.2vw,30px);font-weight:700;line-height:1.3;margin:40px 0 0}
   .rule{width:60px;height:0;border-top:1px solid var(--rule);margin:36px auto}
   p{font-size:18px;line-height:28px;margin:0 0 22px}
-  mark{background:var(--red);color:#fff;padding:0 .12em}
+  mark{background:none;color:var(--fg);text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:5px;text-underline-offset:9px;text-decoration-skip-ink:none}
   form{margin:8px 0 0}
   .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
   input[type=text],input[type=email]{flex:1 1 240px;height:54px;background:#fff;border:1px solid var(--fg);
@@ -68,13 +71,14 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','226905207157692');fbq('track','PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=226905207157692&ev=PageView&noscript=1"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="wrap">
   <!-- Wordmark deleo, logo.png hébergé avec la page (dépendance Wix supprimée le 15/09). -->
   <img class="logo" src="logo.png" alt="Deleo" width="163">
 
-  <h1 class="num">387</h1>
+  <h1 class="num"><span>387</span></h1>
   <p class="sous">Auditeurs mensuels sur Spotify. Hors promo.<br>C'est le chiffre qu'on nous a renvoyé<br>au téléphone, en décembre. Suivi d'un silence.</p>
 
   <h2>On le garde. C'est le nôtre.</h2>
