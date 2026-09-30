@@ -2,7 +2,9 @@
 <html lang="fr">
 <head>
 <!-- Deleo, page confidentialité de la landing « 387 / Dans la Fosse », V1 (23/09/2026).
-     Livrée avec la landing V7 (bandeau de consentement pixel Meta). Aucun traceur sur cette page. -->
+     V2 (30/09/2026) : livrée avec la landing V8, sans bandeau (demande Denis) : § mesure réécrit (pixel chargé à
+     l'ouverture, moyens de s'y opposer), bouton « Changer mon choix » retiré.
+     V1 livrée avec la landing V7 (bandeau de consentement pixel Meta). Aucun traceur sur cette page. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Confidentialité · Deleo</title>
@@ -46,9 +48,8 @@
   </ul>
 
   <h2 id="mesure">La mesure des visites</h2>
-  <p>Si vous l'acceptez dans le bandeau, la page charge le pixel Meta (Meta Platforms Ireland Ltd). Il nous dit si une visite ou une inscription vient de nos publicités sur Facebook et Instagram, et nous permet de montrer nos pubs aux personnes qui sont déjà passées ici. Meta peut rapprocher ces informations de votre compte Facebook ou Instagram et les traiter hors de l'Union européenne, dans le cadre de ses propres garanties.</p>
-  <p>Si vous refusez, rien n'est chargé et la page marche pareil. Votre choix est gardé six mois dans votre navigateur, puis on vous le redemande. Les cookies du pixel durent au plus treize mois.</p>
-  <p><button type="button" id="reset">Changer mon choix</button></p>
+  <p>La page charge le pixel Meta (Meta Platforms Ireland Ltd). Il nous dit si une visite ou une inscription vient de nos publicités sur Facebook et Instagram, et nous permet de montrer nos pubs aux personnes qui sont déjà passées ici. Meta peut rapprocher ces informations de votre compte Facebook ou Instagram et les traiter hors de l'Union européenne, dans le cadre de ses propres garanties.</p>
+  <p>Les cookies du pixel durent au plus treize mois. Pour ne pas être mesuré, vous pouvez bloquer les traceurs dans votre navigateur ou régler vos paramètres publicitaires sur Facebook et Instagram ; vous pouvez aussi nous écrire pour vous y opposer.</p>
   <p>Aucun autre traceur. Les polices de la page sont servies par la page elle-même.</p>
 
   <h2>Vos droits</h2>
@@ -60,9 +61,7 @@
 
   <p class="back"><a href="./">Retour à la fosse</a></p>
 </div>
-<footer>Mise à jour le 23 septembre 2026</footer>
-<script>
-document.getElementById('reset').onclick=function(){try{localStorage.removeItem('deleo_consent');}catch(e){}location.href='./';};
-</script>
+<footer>Mise à jour le 30 septembre 2026</footer>
+
 </body>
 </html>
